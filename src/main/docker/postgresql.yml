@@ -1,0 +1,11 @@
+version: '2'
+services:
+  ecfregistersvc-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/ecfregistersvc/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=ecfregistersvc
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
