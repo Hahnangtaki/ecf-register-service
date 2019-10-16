@@ -14,6 +14,20 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102944_added_entity_OtpHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102945_added_entity_Visitor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102946_added_entity_VisitorRegisterAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102947_added_entity_AccountRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102948_added_entity_AccountIndividuRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102949_added_entity_AccountInstitutionRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102950_added_entity_AccountAuthorizeRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102951_added_entity_InvestorAddressRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102952_added_entity_CampaignRegister.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20191016102944_added_entity_constraints_OtpHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102945_added_entity_constraints_Visitor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102947_added_entity_constraints_AccountRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102950_added_entity_constraints_AccountAuthorizeRegister.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191016102951_added_entity_constraints_InvestorAddressRegister.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
