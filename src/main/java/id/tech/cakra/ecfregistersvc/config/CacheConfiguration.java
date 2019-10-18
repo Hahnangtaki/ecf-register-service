@@ -40,6 +40,18 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.OtpHistory.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.Visitor.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.Visitor.class.getName() + ".otpHistories");
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.VisitorRegisterAccount.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountRegister.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountRegister.class.getName() + ".accountAuthorizeRegisters");
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountRegister.class.getName() + ".investorAddressRegisters");
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountIndividuRegister.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountInstitutionRegister.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.AccountAuthorizeRegister.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.InvestorAddressRegister.class.getName());
+            createCache(cm, id.tech.cakra.ecfregistersvc.domain.CampaignRegister.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
