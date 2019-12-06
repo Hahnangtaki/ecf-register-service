@@ -1,0 +1,90 @@
+{
+    "name": "AccountBankRegister",
+    "fields": [
+        {
+            "fieldName": "bankAccountNo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 60
+        },
+        {
+            "fieldName": "bankAccountName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "bankBranch",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1
+        },
+        {
+            "fieldName": "currencyId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "bankId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "createSystemDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "createUserId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "lastModificationSystemDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "lastModificationDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "lastModificationUserId",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "accountRegister",
+            "otherEntityRelationshipName": "accountBankRegister",
+            "relationshipName": "accountRegister",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191206033801",
+    "entityTableName": "account_bank_register",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "ecfregistersvc",
+    "applications": "*",
+    "microserviceName": "ecfregistersvc"
+}

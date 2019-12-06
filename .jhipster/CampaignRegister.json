@@ -1,0 +1,157 @@
+{
+    "name": "CampaignRegister",
+    "fields": [
+        {
+            "fieldName": "registerCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 10
+        },
+        {
+            "fieldName": "campaignName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "campaignDesc",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 500
+        },
+        {
+            "fieldName": "investmentType",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 10
+        },
+        {
+            "fieldName": "offerDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "deadlineDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "fundTarget",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "fundRaised",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "fundPaid",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "qtyTarget",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "qtyRaised",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "estRoiMin",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "estRoiMax",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "prospectusFile",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "campaignLogo1",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "campaignLogo2",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "campaignLogo3",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1
+        },
+        {
+            "fieldName": "companyBankId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "campaignId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "accountId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "currencyId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "createSystemDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "createUserId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "lastModificationSystemDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "lastModificationDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "lastModificationUserId",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191206033802",
+    "entityTableName": "campaign_register",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "ecfregistersvc",
+    "applications": "*",
+    "microserviceName": "ecfregistersvc"
+}
